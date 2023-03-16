@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     email: {
-        type: email,
+        type: String,
         required: true
     },
     password: {
@@ -17,10 +17,6 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    roles: [{
-        type: String,
-        default: "user"
-    }],
     following: [{
         type: String,
         default: "Employee"
